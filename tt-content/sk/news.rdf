@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:html="http://www.w3.org/1999/xhtml">
+  <channel rdf:about="http://search.meonl.com/">
+    <title>search.MeOnL.com</title>
+    <link>http://search.MeOnL.com/</link>
+    <description>Porovnávanie vyhľadávačov</description>
+    <dc:date>2010-02-28T11:12:23+02:00</dc:date>
+    <dc:subject></dc:subject>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://search.meonl.com/sk/#goinglive"/>
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://search.meonl.com/sk/#goinglive">
+    <title>Slovenská lokalizácia search.MeOnL.com bola spustená</title>
+    <link>http://search.MeOnL.com/sk/</link>
+    <description></description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2009-03-07T20:35:00+02:00</dc:date>
+  </item>
+</rdf:RDF>

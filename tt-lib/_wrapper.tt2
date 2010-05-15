@@ -1,0 +1,25 @@
+[%
+# all this parade because Template sees "template" variable as object and throws and undef error in template.redirect is not set
+DEFAULT redirect = '';
+TRY;
+	redirect = template.redirect;
+CATCH;
+	"";
+END;
+
+IF redirect;
+	INCLUDE redirect.tt2 redirect=template.redirect;
+ELSIF template_filename.match('^ajax_');
+	content;
+ELSE;
+	INCLUDE _header.tt2;
+-%]
+	<div id="content">
+	<div id="contentInside">
+		<div id="contentInsideMain">
+[% content %]
+		</div>	
+	</div>	
+	</div>
+[% INCLUDE _footer.tt2 -%]
+[% END -%]

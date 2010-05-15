@@ -1,0 +1,122 @@
+[% META title = 'about search.meonl.com'; %]
+
+<div class="mainText">
+<h1>Why?</h1>
+
+<p>Having a wide screen? Use the vertical space which offers to search with more
+search engines at once.
+</p>
+
+<h1>How?</h1>
+
+<p>Simply enter your search query to the top most input box and hit enter:</p>
+
+<p><img width="600" height="72" src="[% content_root %]img/about-enter-search.png"/></p>
+
+<hr/>
+
+<h2>add</h2>
+
+<p>You can add some other search engines:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-more-search.png"/></p>
+
+<hr/>
+
+<a name="spaceTriggeredSearch"></a>
+<h2>space triggered search</h2>
+
+<p>Via check box located right next to the search box you can enable automatic searching when ever
+you write a space. If the search results are not good enough, just continue typing in more key words:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-space-auto-submit.png"/></p>
+
+<a name="change"></a>
+<h2>change</h2>
+
+<p>To change a search engine in a column:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-change.png"/></p>
+
+<hr/>
+
+<h2>add after</h2>
+
+<p>To add another search engine after a column:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-add.png"/></p>
+
+<hr/>
+
+<h2>remove</h2>
+
+<p>To remove search engine column:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-close.png"/></p>
+
+<h2>just one</h2>
+
+<p>To remove all search engine columns besides the current one:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-maximize.png"/></p>
+
+<hr/>
+
+<h2>bookmark and share</h2>
+
+<p>Here you can find current meonl link:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-share.png"/></p>
+
+<p>It's clickable and can be sent. The link looks like this:</p>
+
+
+<p>
+<code>http://search.meonl.com/en/?s=<span style="color: red;">gb</span>&q=<span style="color: red;">indian%20restaurant%20vienna</span></code><br/>
+or<br/>
+<code>http://search.meonl.com/en/?s=<span style="color: red;">gb</span></code><br/>
+or<br/>
+<code>http://search.meonl.com/en/?q=<span style="color: red;">indian%20restaurant%20vienna</span></code><br/>
+</p>
+
+<p>
+"<code>s=<span style="color: red;">gb</span></code>" means to open two columns
+with google.com in the first and bing.com in the second one.
+"<code>q=<span style="color: red;">indian%20restaurant%20vienna</span></code>" contains the search keywords.
+</p>
+
+<a name="langs"></a>
+<h1>Additional language search</h1>
+
+<p>When <a href="#change">changing</a> a search engine it is also possible to choose a different
+language:</p>
+
+<p><img width="600" height="94" src="[% content_root %]img/about-choose-lang.png"/></p>
+
+<p>Entered search phrase will be automatically translated, using
+<a href="http://translate.google.com/">Google Translate</a>, into the selected
+language and the language search hostname will be used to search. Example in
+case of Spanish and Google the <a href="http://google.es/">google.es</a> will
+be used in that column.</p>
+
+<h2>other primary languages</h1>
+
+<p><a href="http://search.meonl.com/cs/">Czech</a>, <a href="http://search.meonl.com/de/">German</a> and <a href="http://search.meonl.com/sk/">Slovak</a></p>
+
+<h1>So?</h1>
+
+<p>So you can start searching now - <a href="http://search.meonl.com/en/">http://search.meonl.com/en/</a>.</p>
+
+<h1>Firefox Add-on</h1>
+
+<p>You can add this search to Firefox as <a href="https://addons.mozilla.org/en-US/firefox/addon/59864">Add-on</a>.</p>
+
+<h1>Contact &amp; Feeback</h1>
+
+<p>You can send us any feedback via <a href="mailto:support@meon.sk">email</a> or <a href="http://www.twitter.com/MeOnL_com"><img src="http://twitter-badges.s3.amazonaws.com/twitter-a.png" alt="Twitter"/></a>. Thank you!</p>
+
+<h1>Source code</h1>
+
+<p>of this page can be found here - <a href=""></a>.</p>
+
+</div>

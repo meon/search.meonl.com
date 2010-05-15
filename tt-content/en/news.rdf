@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://purl.org/rss/1.0/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:syn="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:html="http://www.w3.org/1999/xhtml">
+  <channel rdf:about="http://search.meonl.com/">
+    <title>search.meonl.com</title>
+    <link>http://search.meonl.com/</link>
+    <description>Search search engines.</description>
+    <dc:date>2010-02-28T11:12:23+02:00</dc:date>
+    <dc:subject></dc:subject>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="http://search.meonl.com/#goinglive"/>
+        <rdf:li rdf:resource="http://search.meonl.com/en/about.html#spaceAutoSearch"/>
+        <rdf:li rdf:resource="https://addons.mozilla.org/en-US/firefox/addon/59864"/>
+        <rdf:li rdf:resource="http://search.meonl.com/en/about.html#langs"/>
+        <rdf:li rdf:resource="http://search.meonl.com/en/?s=gg&amp;l=ende"/>
+        <rdf:li rdf:resource="http://search.meonl.com/en/?s=gt&amp;q=Vienna%20travel%20tips%20-hotels"/>
+        <rdf:li rdf:resource="http://search.meonl.com/en/#history-navigation"/>
+        <rdf:li rdf:resource="http://search.meonl.com/en/#maximize"/>
+        
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="http://search.meonl.com/#goinglive">
+    <title>Going live</title>
+    <link>http://search.meonl.com/</link>
+    <description></description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2009-01-05T00:00:00+02:00</dc:date>
+  </item>
+  <item rdf:about="http://search.meonl.com/en/about.html#spaceAutoSearch">
+    <title>Space Triggered Search</title>
+    <link>http://search.meonl.com/en/about.html#spaceAutoSearch</link>
+    <description>
+    Check box was added right next to the search input box that allows to
+    enable searching when ever space character is written, which is after
+    new key word is written.
+    </description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2009-01-11T21:44:00+02:00</dc:date>
+  </item>
+  <item rdf:about="https://addons.mozilla.org/en-US/firefox/addon/59864">
+    <title>Firefox Add-on</title>
+    <link>https://addons.mozilla.org/en-US/firefox/addon/59864</link>
+    <description>&lt;a href="http://search.meol.com/en/"&gt;search.meonl.com&lt;/a&gt;
+    is now available as &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/59864"&gt;Firefox Add-on&lt;/a&gt;
+    for easy usage.
+    </description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2010-01-17T22:49:00+02:00</dc:date>
+  </item>
+  <item rdf:about="http://search.meonl.com/en/about.html#langs">
+    <title>Multi language support</title>
+    <link>http://search.meonl.com/en/about.html#langs</link>
+    <description>Added posibility to search in multiple languages at once.</description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2010-02-28T11:12:00+02:00</dc:date>
+  </item>
+  <item rdf:about="http://search.meonl.com/en/?s=gg&amp;l=ende">
+    <title>Google searches inline, no more in iframe</title>
+    <link>http://search.meonl.com/en/?s=gg&amp;l=ende</link>
+    <description>Google search is now performed inline and no more in iframe allowing to directly click on the links.</description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2010-03-06T14:09:00+02:00</dc:date>
+  </item>
+  <item rdf:about="http://search.meonl.com/en/?s=gt&amp;q=Vienna%20travel%20tips%20-hotels">
+    <title>Helper Tags Cloud added</title>
+    <link>http://search.meonl.com/en/?s=gt&amp;q=Vienna%20travel%20tips%20-hotels</link>
+    <description>Now it is possible to use helper tags cloud to aid searching.</description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2010-03-24T12:13:00+02:00</dc:date>
+  </item>
+  <item rdf:about="http://search.meonl.com/en/#history-navigation">
+    <title>Search history navigation added</title>
+    <link>http://search.meonl.com/en/</link>
+    <description>
+        Next to the search input field there are now history navigation
+        buttons - &lt;img src="http://search.meonl.com/img/nav-back.png"/&gt;
+        and &lt;img src="http://search.meonl.com/img/nav-forward.png"/&gt;
+    </description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2010-05-07T22:09:00+02:00</dc:date>
+  </item>
+  <item rdf:about="http://search.meonl.com/en/#maximize">
+    <title>Show only one column button</title>
+    <link>http://search.meonl.com/en/</link>
+    <description>
+        New button was added &lt;img src="http://search.meonl.com/img/button-maximize.png"/&gt;
+        that will remove all other columns besides the current one.
+    </description>
+    <dc:creator>meon</dc:creator>
+    <dc:date>2010-05-07T22:09:01+02:00</dc:date>
+  </item>
+</rdf:RDF>

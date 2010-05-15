@@ -1,0 +1,122 @@
+[% META title = 'about search.meonl.com'; %]
+
+<div class="mainText">
+<h1>Prečo?</h1>
+
+<p>Máte širokouhlú obrazovku? Využite priestor, ktorý ponúka a vyhľadávajte
+vo viacerých vyhľadávačoch alebo jazykoch naraz.
+</p>
+
+<h1>Ako?</h1>
+
+<p>Jednoducho napíšte svoj hľadaný výraz do najhornejšieho políčka a stlačte enter:
+</p>
+
+<p><img width="600" height="72" src="[% content_root %]img/about-enter-search.png"/></p>
+
+<hr/>
+
+<h2>pridanie</h2>
+
+<p>Môžete pridať ďaľšie vyhľadávače pomocou:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-more-search.png"/></p>
+
+<hr/>
+
+<a name="spaceTriggeredSearch"></a>
+<h2>hľadať po stlačení medzery</h2>
+
+<p>Ak zaškrtnete políčko napravo od vyhľadávacieho políčka, tak po
+každom stlačení medzery sa automaticky spustí vyhľadávanie. Ak hľadané výsledky nie sú
+postačujúce, stačí ďalej pripísať ďalšie kľúčové slová:
+</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-space-auto-submit.png"/></p>
+
+<a name="change"></a>
+<h2>zmeniť</h2>
+
+<p>Pre zmenu iného vyhľadávača alebo jazyka:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-change.png"/></p>
+
+<hr/>
+
+<h2>pridať</h2>
+
+<p>Pre pridanie nového stĺpca:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-add.png"/></p>
+
+<hr/>
+
+<h2>odstrániť</h2>
+
+<p>Pre odstránenie stĺpca:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-close.png"/></p>
+
+<h2>iba jeden stĺpec</h2>
+
+<p>Pre odstránenie všetkých stĺpcov okrem aktuálneho:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-maximize.png"/></p>
+
+<hr/>
+
+<h2>źaložka a odkaz na zdieľanie</h2>
+
+<p>Tu sa vždy nachádza aktuálny search.MeOnL.com odkaz:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-share.png"/></p>
+
+<p>Dá sa naň klikúť alebo ho skopírovať a odoslať. Odkaz vyzerá nasledovne:</p>
+
+<p>
+<code>http://search.meonl.com/sk/?s=<span style="color: red;">gz</span>&q=<span style="color: red;">indian%20restaurant%20vienna</span>&l=<span style="color: red;">sken</span></code><br/>
+alebo<br/>
+<code>http://search.meonl.com/sk/?s=<span style="color: red;">gz</span>&q=<span style="color: red;">indian%20restaurant%20vienna</span></code><br/>
+alebo<br/>
+<code>http://search.meonl.com/sk/?s=<span style="color: red;">gz</span></code><br/>
+alebo<br/>
+<code>http://search.meonl.com/sk/?q=<span style="color: red;">indian%20restaurant%20vienna</span></code><br/>
+</p>
+
+<p>
+"<code>s=<span style="color: red;">gz</span></code>" znamená, aby sa otvorili dva stĺpce.
+Prvý s google.com a druhý s zoznam.sk.
+"<code>q=<span style="color: red;">indian%20restaurant%20vienna</span></code>" je hľadaný výraz.
+"<code>l=<span style="color: red;">sken</span></code>" sú jazyky, ktoré budú použité na vyhľadávanie.
+</p>
+
+<a name="langs"></a>
+<h1>Ďalšie jazyky</h1>
+
+<p>Pri <a href="#change">zmene</a> vyhľadávača sa dá vybrať aj iný/ďalší jazyk:</p>
+
+<p><img width="600" height="94" src="[% content_root %]img/about-choose-lang.png"/></p>
+
+<p>Zadaná hľadaná fráza bude automaticky preložená, pomocou
+<a href="http://translate.google.com/">Google Translate</a>, do tohto jazyka.
+Taktiež bude použitá špecifická doména pre tento jazyk. Napríklad pre vyhľadávanie
+po španielsky sa použije <a href="http://google.es/">google.es</a>.
+</p>
+
+<h2>ďalšie primárne jazyky</h1>
+
+<p><a href="http://search.meonl.com/en/">Angličtina</a>, <a href="http://search.meonl.com/cs/">Čeština</a> a <a href="http://search.meonl.com/de/">Nemčina</a>.</p>
+
+<h1>Tak?</h1>
+
+<p>Tak už len vyhľadávať - <a href="http://search.meonl.com/">http://search.meonl.com/sk/</a>.</p>
+
+<h1>Firefox Add-on</h1>
+
+<p>search.MeOnL.com sa dá pridať do Firefox prehľadača pomocou <a href="https://addons.mozilla.org/en-US/firefox/addon/59864">doplnku</a>.</p>
+
+<h1>Kontakt &amp; Feeback</h1>
+
+<p>Môžete nás kontaktovať cez <a href="mailto:support@meon.sk">email</a> alebo <a href="http://www.twitter.com/MeOnL_com"><img src="http://twitter-badges.s3.amazonaws.com/twitter-a.png" alt="Twitter"/></a>. Ďakujeme!</p>
+
+</div>

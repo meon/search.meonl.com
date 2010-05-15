@@ -1,0 +1,12 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Compare Search Engines</ShortName>
+<Description>Compare 2+ search engines side by side</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image height="16" width="16" type="image/x-icon">data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASkpLAKengAerq2MKkpIxCcDANwba2gcE//8AAv//AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIB9AXZ2giU0NHu7JSWK+R4ejf8ZGYz/FBSL/hAQjP4NDY3+CQmN/QcHj/4DA5H9AwOQ8wICdaIGBiwFExMAAJyciApERIGyNze2/zAwyv8oKMr/Hx/K/xMTy/8XF9D/EhLS/wMD1P8HB9r/CAjf/wQE5f8CAsv/AwNykQAAAAC4uJcPR0eN5EBAyf83N8f/Ly/I/4WF4P/t7fr/JibN/xoazv/x8fz/dnbm/wkJ2P8HB9z/BQXm/wQEe84AAAAAwMChEVBQlepKSsv/QUHI/zMzxf/JyfD//////1FR1P9NTdb//////8DA8v8JCdP/CwvX/wgI4P8FBXzU29sAAMPDqRNaWprrVVXM/0pKyf89Pcf/ycnv//////9WVtP/UFDT///////AwPH/Dg7O/w8P0/8MDNv/CQl71np6AALIyLQWZWWg7F9fzv9VVcr/RkbH/8zM8P//////XFzS/1dX0///////wsLw/xQUy/8UFM//EBDW/w0NetdlZQAE1dXFGXFxp+1ra9L/X1/M/1FRyf/OzvD//////2Nj0v9dXdL//////8TE8P8aGsn/GhrM/xUV0v8SEnrZe3sABd/f0Rx9fa/vd3fV/2xs0P9dXc3/0tLw//////9qatP/ZGTS///////GxvD/ISHH/yAgyv8bG8//Fxd62pWVLAbe3tMgiYm38IWF2f94eNT/aWnP/9XV8f//////c3PU/2tr0///////yMjv/ykpx/8nJ8j/ISHM/x0dfNyPjzIH6urhI5eXwfKSkt7/hYXY/3Z20//Y2PL//////3t71v90dNT//////8rK7/8xMcb/MDDI/ygoy/8jI37dhIQ8CfHx6iakpMr0oKDj/5OT3f+Dg9f/3Nzz//////+EhNj/fX3W///////OzvD/OjrG/zc3x/8wMMr/KiqA3qGhXgn39/IntrbU76+v6v+goOL/lJTe/7y86v/39/z/c3PS/2xs0P/y8vv/m5vg/0hIyP9BQcj/ODjJ/zQ0fdefn3gL+vr5F9LS5cTAwOT/sbHp/6Sk5f+WluD/hYXa/35+2P9zc9T/YGDO/1xczf9UVMz/S0vI/0FBpP9MTH+UkZGLCf///wL+/vxC19fnusDA1+Kyss3kp6fE4pqau+CQkLPehISq3Hl5odpwcJzYZWWU1l5ejc9nZ42Um5uQI2pqawEAAAAA////Av7+/BT5+fUd8PDqHerq4x3a2tMd2trTHdPTzB3KysEcysq/HLe3rRyqqqMamJiVDnR0dQEAAAAA//8AAMADAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAIABAADAAwAA//8AAA==</Image>
+<Url type="text/html" method="GET" template="http://search.meonl.com/en/">
+  <Param name="q" value="{searchTerms}"/>
+  <Param name="src" value="ms"/>
+</Url>
+<moz:SearchForm>http://search.meonl.com/en/</moz:SearchForm>
+</OpenSearchDescription>

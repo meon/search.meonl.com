@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: meonl.com 0.01\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Peter Stoehr <info@peter.st>\n"
+"Language-Team: \n"
+
+# search data js
+msgid "cs language"
+msgstr "Tschechisch"
+
+msgid "de language"
+msgstr "Deutsch"
+
+msgid "en language"
+msgstr "Englisch"
+
+msgid "es language"
+msgstr "Spanisch"
+
+msgid "fr language"
+msgstr "Französisch"
+
+msgid "it language"
+msgstr "Italienisch"
+
+msgid "sk language"
+msgstr "Slowakisch"
+
+msgid "change - button title"
+msgstr "Ändern"
+
+msgid "add - button title"
+msgstr "Hinzufügen"
+
+msgid "close - button title"
+msgstr "Schließen"
+
+msgid "maximize - button title"
+msgstr "nur diese Spalte"
+
+msgid "must be present - button title"
+msgstr "muss sein"
+
+msgid "can not be present - button title"
+msgstr "muss nicht sein"
+
+msgid "no preference - button title"
+msgstr "keine Präferenz"
+
+msgid "remove - button title"
+msgstr "lösen"
+
+msgid "quote words - button title"
+msgstr "Wörter zitieren"
+
+msgid "remove quotes - button title"
+msgstr "Anführungszeichen lösen"
+
+msgid "Choose a search engine"
+msgstr "Wählen Sie eine Suchmaschine aus"
+
+msgid "Choose a language"
+msgstr "Wählen Sie eine Sprache aus"
+

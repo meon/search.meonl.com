@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: meonl.com 0.01\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+# search data js
+msgid "cs language"
+msgstr "Česky"
+
+msgid "de language"
+msgstr "Německy"
+
+msgid "en language"
+msgstr "Anglicky"
+
+msgid "es language"
+msgstr "Španělsky"
+
+msgid "fr language"
+msgstr "Francouzsky"
+
+msgid "it language"
+msgstr "Italsky"
+
+msgid "sk language"
+msgstr "Slovensky"
+
+msgid "change - button title"
+msgstr "změniť"
+
+msgid "add - button title"
+msgstr "přidat"
+
+msgid "close - button title"
+msgstr "zrušit"
+
+msgid "maximize - button title"
+msgstr "jenom tenhle sloupec"
+
+msgid "must be present - button title"
+msgstr "musí se nacházet"
+
+msgid "can not be present - button title"
+msgstr "nesmí se nacházet"
+
+msgid "no preference - button title"
+msgstr "bez preference"
+
+msgid "remove - button title"
+msgstr "zrušit"
+
+msgid "quote words - button title"
+msgstr "spojit slova"
+
+msgid "remove quotes - button title"
+msgstr "zrušit uvozovky"
+
+msgid "Choose a search engine"
+msgstr "Vyberte vyhledávač"
+
+msgid "Choose a language"
+msgstr "Vyberte jazyk"

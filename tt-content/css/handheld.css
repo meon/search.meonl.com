@@ -1,0 +1,37 @@
+
+* {
+    position: static !important;
+    float: none !important;
+    background: none !important;
+}
+
+.handheldOnly {
+    display: block;
+}
+
+#header,
+#header_inside,
+
+#header_inside h1 a,
+#header_inside ul,
+#header_inside ul li,
+#header_inside ul li a,
+#footer_inside,
+#content,
+.capability
+{
+    width: auto !important;
+    height: auto !important;
+    padding: 0 0 0 0 !important;
+    margin: 0 0 0 0 !important;
+    line-height: 1em !important;
+    font-size: 1em !important;
+}
+
+.buttons .close {
+	display: none;
+}
+
+#header_inside h1 {
+	display: none;
+}

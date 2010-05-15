@@ -1,0 +1,22 @@
+.hideWhenJS {
+	visibility: hidden;
+}
+.showWhenJS {
+	visibility: visible;
+}
+.hideOnLoad {
+	visibility: hidden;
+}
+.groupCap {
+	display: none;
+}
+.plusToggle {
+	display: inline;
+}
+.minusToggle {
+	display: none;
+}
+.phoneInfo h3 {
+	font-size: 15px;
+	line-height: 15px;
+}

@@ -1,0 +1,29 @@
+[% USE date %]
+[%# dont show footer on index page %]
+[% IF template.name != "index.tt2-$lang" %]
+	<div id="footer">
+	<div id="footer_inside">
+		<p><a href="http://meon.sk/">meon, s.r.o.</a> [% date.format(date.now, '%Y') %]</p>
+	</div>
+	<div class="handheldOnly"></div>
+	</div>
+[% END %]
+
+	<script type="text/javascript"><!--
+		var lang = '[% lang %]';
+		var contentRoot = '[% content_root %]';
+	// --></script>
+	<script type="text/javascript" src="[% content_root %]js/min.js"></script>
+	<script type="text/javascript" src="[% content_root %]js/jsloc-[% lang %].js"></script>
+	[% FOREACH js IN additionalJS %]
+	<script type="text/javascript" src="[% content_root %]js/[% js %]"></script>
+	[% END %]
+	<script type="text/javascript"><!--
+		wrap.i18n.init(undefined, 'jsloc-[% lang %]', locale_data);
+	// --></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAsqk0CoJX9uU_pFZjOb22xBRRmBkLezm6Mxx2gt9l1WFTXgd5exSz25NTGs6U4dgYh6lr3x0kp0iBSw"></script>
+	<script type="text/javascript"><!--
+		google.load('language', '1');google.load("search", "1");
+	//--></script>
+</body>
+</html>

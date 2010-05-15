@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: meonl.com 0.01\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Peter Stoehr <info@peter.st>\n"
+"Language-Team: \n"
+
+#: index.tt2
+msgid "title - compare search engines"
+msgstr "Suchmaschinenvergleich"
+
+#: index.tt2
+msgid "description - compare search engines"
+msgstr "Suchmaschinenvergleich"
+
+#: index.tt2
+msgid "keywords - compare search engines"
+msgstr "Vergleich, Suche"
+
+#: index.tt2
+msgid "menu - About"
+msgstr "Über uns"
+
+#: index.tt2
+msgid "h1: This page can not work without JavaScript, sorry."
+msgstr "Diese Seite funktioniert nicht ohne JavaScript."
+
+#: index.tt2
+msgid "a title: space triggered search"
+msgstr "automatische Suche beim Drücken der Leertaste"
+
+#: about.tt2
+msgid "title - about search.meonl.com"
+msgstr "Über search.MeOnL.com"
+
+#: about.tt2
+msgid "description - about search.meonl.com"
+msgstr "Über Dienstleistungen auf der Seite search.MeOnL.com."
+
+#: about.tt2
+msgid "keywords - about search.meonl.com"
+msgstr "über"
+
+#: about.tt2
+msgid "h1: Comparing search engines"
+msgstr "Suchmaschinenvergleich"
+
+#: about.tt2
+msgid "menu - Search"
+msgstr "Suchen"
+
+#: index.tt2
+msgid "current meonl link to bookmark or send"
+msgstr "aktuellen search.MeOnL.com Link zu den Favoriten hinzufügen oder senden"
+
+#: index.tt2
+msgid "search.MeOnL.com news - rss title"
+msgstr "search.MeOnL.com Neuigkeiten"
+
+#: index.tt2-de
+msgid "menu - Switch language"
+msgstr "Sprache wechseln"
+
+#: index.tt2-en
+msgid "menu - Back to MeOnL.com"
+msgstr "Zurück zum MeOnL.com"
+
+#: index.tt2-sk
+msgid "button - Previous search"
+msgstr "Vorige suche"
+
+#: index.tt2-sk
+msgid "button - Next search"
+msgstr "Die folgende Suche"

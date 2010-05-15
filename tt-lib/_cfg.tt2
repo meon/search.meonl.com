@@ -1,0 +1,49 @@
+[%
+
+DEFAULT lang = 'en';
+DEFAULT title = '';
+
+# fill in "root_path" variable with a relative path to the root of the web
+root_path = "";
+path_folders = template.name.split('/');
+template_filename = path_folders.pop;
+FOREACH i = path_folders;
+	root_path = "../${root_path}";
+END;
+
+content_root  = "../${root_path}";
+
+# continue only for normal (non-ajax) pages
+IF NOT template_filename.match('^ajax_');
+
+DEFAULT description = '';
+DEFAULT keywords = '';
+DEFAULT additionalJS = [];
+
+title_base = title || template.title;
+title = title || "title - ${template.title}";
+description = description || "description - ${title_base}";
+keywords = keywords || "keywords - ${title_base}";
+title = i18n.loc(title);
+title = "search.meonl.com - ${title}";
+description = i18n.loc(description);
+keywords = i18n.loc(keywords);
+
+# prepare menu highlighting
+top_menu = template.name.replace('\.tt2(-..)?$', '');
+IF top_menu.match('^brands/');
+	top_menu = 'brands/index';
+END;
+
+# Links on the top menu (use an array for the order)
+links = [
+
+	{
+		page  => 'news',
+		label => i18n.loc('menu - About'),
+	},
+];
+
+END;
+
+-%]

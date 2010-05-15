@@ -1,0 +1,2 @@
+[% META title = 'compare search engines'; %]
+[% INCLUDE 'index.tt2-en' %]

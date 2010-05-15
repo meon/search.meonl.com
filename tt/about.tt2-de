@@ -1,0 +1,119 @@
+[% META title = 'about search.meonl.com'; %]
+
+<div class="mainText">
+<h1>Warum?</h1>
+
+<p>Haben Sie einen Breitbildmonitor? Nutzen Sie den Raum den er bietet und suchen Sie mit mehreren Suchmaschinen in mehreren Sprachen auf einmal.
+</p>
+
+<h1>Wie?</h1>
+
+<p>Schreiben Sie einfach Ihren Suchbegriff in das obige Suchfeld und drücken Sie die Eingabetaste:
+</p>
+
+<p><img width="600" height="72" src="[% content_root %]img/about-enter-search.png"/></p>
+
+<hr/>
+
+<h2>Mehrere Suchmaschinen</h2>
+
+<p>Klicken Sie auf das Logo der jeweiligen Suchmaschine die Sie hinzufügen möchten:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-more-search.png"/></p>
+
+<hr/>
+
+<a name="spaceTriggeredSearch"></a>
+<h2>Suchvorschau mittels Leertaste</h2>
+
+<p>Wenn Sie das Feld rechts von dem Suchfeld aktivieren, schaltet sich automatisch die Suche nach jedem Drücken der Leertaste ein. Um die Suchergebnisse einzugrenzen fügen Sie einfach weitere Suchbegriffe hinzu und drücken danach wieder die Leertaste:
+</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-space-auto-submit.png"/></p>
+
+<a name="change"></a>
+<h2>Ändern der Suchmaschinenauswahl</h2>
+
+<p>Möchten Sie die Auswahl an eingestellten Suchmaschinen ändern, klicken Sie einfach auf die rote Schaltfläche mit dem weißen Vollkreis:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-change.png"/></p>
+
+<hr/>
+
+<h2>Hinzufügen von Suchmaschinen</h2>
+
+<p>Mit einem Klick auf die rote Schaltfläche mit dem weißen Kreuz fügen Sie eine neue Suchmaschine an:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-add.png"/></p>
+
+<hr/>
+
+<h2>Entfernen von Suchmaschinen</h2>
+
+<p>Um die Suchmaschine in der weiteren Spalte zu entfernen, klicken Sie einfach auf die rote Schaltfläche mit dem Andreaskreuz:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-close.png"/></p>
+
+<hr/>
+
+<h2>Nur eine Suchmaschine</h2>
+
+<p>Alle anderen Suchmaschinen entfernen:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="68" src="[% content_root %]img/about-maximize.png"/></p>
+
+<hr/>
+
+<h2>Zu Favoriten hinzufügen oder weiterleiten</h2>
+
+<p>Hier finden sie immer einen Permanentlink:</p>
+
+<p style="margin-top: -2em;"><img width="600" height="72" src="[% content_root %]img/about-share.png"/></p>
+
+<p>Man kann den Link anklicken oder kopieren und weiterleiten. Der Permanentlink sieht wie folgt aus:</p>
+
+<p>
+<code>http://search.meonl.com/sk/?s=<span style="color: red;">gz</span>&q=<span style="color: red;">indian%20restaurant%20vienna</span>&l=<span style="color: red;">sken</span></code><br/>
+oder<br/>
+<code>http://search.meonl.com/sk/?s=<span style="color: red;">gz</span>&q=<span style="color: red;">indian%20restaurant%20vienna</span></code><br/>
+oder<br/>
+<code>http://search.meonl.com/sk/?s=<span style="color: red;">gz</span></code><br/>
+oder<br/>
+<code>http://search.meonl.com/sk/?q=<span style="color: red;">indian%20restaurant%20vienna</span></code><br/>
+</p>
+
+<p>
+"<code>s=<span style="color: red;">gz</span></code>" bedeutet, dass zwei Spalten geöffnet werden.
+Die erste mit google.com und die zweite mit zoznam.sk.
+"<code>q=<span style="color: red;">indian%20restaurant%20vienna</span></code>" ist der Suchbegriff.
+"<code>l=<span style="color: red;">sken</span></code>" sind die Sprachen, die für die Suche benutzt werden.
+</p>
+
+<a name="langs"></a>
+<h1>Andere Sprachen</h1>
+
+<p>Bei der <a href="#change">Änderung</a> der Suchmaschine ist es auch möglich die Sprache auswählen:</p>
+
+<p><img width="600" height="94" src="[% content_root %]img/about-choose-lang.png"/></p>
+
+<p>Der angegebene Suchbegriff wird automatisch, mittels <a href="http://translate.google.com/">Google Translate</a> in die jeweilige Sprache übersetzt.
+Ebenfalls wird eine spezifische Domain für diese Sprache angewendet (bspw. benutzt man für spanisch <a href="http://google.es/">google.es</a>).
+</p>
+
+<h2>Andere Primärsprachen</h1>
+
+<p><a href="http://search.meonl.com/en/">Englisch</a>, <a href="http://search.meonl.com/sk/">Slowakisch</a> und <a href="http://search.meonl.com/cs/">Tschechisch</a>.</p>
+
+<h1>Also?</h1>
+
+<p>Beginnen Sie jetzt mit der Suche - <a href="http://search.meonl.com/">http://search.meonl.com/de/</a>.</p>
+
+<h1>Firefox Add-on</h1>
+
+<p>search.MeOnL.com kann in die Firefox Suche <a href="https://addons.mozilla.org/en-US/firefox/addon/59864">hinzugefügt</a> werden.</p>
+
+<h1>Kontakt &amp; Feeback</h1>
+
+<p>Sie können uns <a href="mailto:support@meon.sk">per E-Mail</a> oder <a href="http://www.twitter.com/MeOnL_com"><img src="http://twitter-badges.s3.amazonaws.com/twitter-a.png" alt="Twitter"/></a> zu kontaktieren. Danke schön!</p>
+
+</div>

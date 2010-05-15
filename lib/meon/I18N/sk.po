@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: meonl.com 0.01\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: index.tt2
+msgid "title - compare search engines"
+msgstr "Porovnajte vyhľadávače"
+
+#: index.tt2
+msgid "description - compare search engines"
+msgstr "Porovnajte vyhľadávače."
+
+#: index.tt2
+msgid "keywords - compare search engines"
+msgstr "porovnanie, vyhľadávanie"
+
+#: index.tt2
+msgid "menu - About"
+msgstr "O stránke"
+
+#: index.tt2
+msgid "h1: This page can not work without JavaScript, sorry."
+msgstr "Táto stránka nefunguje bez JavaScript-u."
+
+#: index.tt2
+msgid "a title: space triggered search"
+msgstr "automaticky hľadať keď sa stlačí medzera"
+
+#: about.tt2
+msgid "title - about search.meonl.com"
+msgstr "O search.MeOnL.com"
+
+#: about.tt2
+msgid "description - about search.meonl.com"
+msgstr "O službách na stránke search.MeOnL.com."
+
+#: about.tt2
+msgid "keywords - about search.meonl.com"
+msgstr "o"
+
+#: about.tt2
+msgid "h1: Comparing search engines"
+msgstr "Porovnanie vyľadávačov."
+
+#: about.tt2
+msgid "menu - Search"
+msgstr "Hľadať"
+
+#: index.tt2
+msgid "current meonl link to bookmark or send"
+msgstr "aktuálny search.MeOnL.com odkaz na pridanie do záložiek alebo poslanie"
+
+#: index.tt2
+msgid "search.MeOnL.com news - rss title"
+msgstr "search.MeOnL.com novinky"
+
+#: index.tt2-sk
+msgid "menu - Switch language"
+msgstr "Zmeniť jazyk"
+
+#: index.tt2-sk
+msgid "menu - Back to MeOnL.com"
+msgstr "Naspäť na MeOnL.com"
+
+#: index.tt2-sk
+msgid "button - Previous search"
+msgstr "Predchádzajúce vyhľadávanie"
+
+#: index.tt2-sk
+msgid "button - Next search"
+msgstr "Nasledujúce vyhľadávanie"

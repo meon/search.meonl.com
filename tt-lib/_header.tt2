@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="[% lang %]" xml:lang="[% lang %]">
+<head>
+	<title>[% title %]</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-language" content="[% lang %]" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="author" content="different" />
+	<meta name="copyright" content="" />
+	<meta name="description" content="[% description %]" />
+	<meta name="keywords" content="[% keywords %]" />
+	<meta name="mssmarttagspreventparsing" content="true" />
+	<meta name="robots" content="index, follow, noarchive" />
+	<meta name="revisit-after" content="7 days" />
+	<link rel="alternate" title="[% i18n.loc('search.MeOnL.com news - rss title') %]" href="http://search.meonl.com/[% lang %]/news.rdf" type="application/rss+xml" />
+	<link rel="shortcut icon" href="[% content_root %]favicon.ico" />
+	[% IF template.name == "index.tt2-$lang" %]<style>* { overflow: hidden; }</style>[% END -%]
+	<link rel="stylesheet" href="[% content_root %]css/style.css" type="text/css" media="screen" />
+	<script type="text/javascript"><!--
+		document.write('<link rel="stylesheet" href="[% content_root %]css/style-js.css" type="text/css" media="screen" />');
+	//--></script>
+	<!-- <link rel="stylesheet" href="[% content_root %]css/handheld.css" type="text/css" media="handheld" /> -->
+	<link rel="search" type="application/opensearchdescription+xml" title="Compare Search Engines" href="[% content_root %]ff/meonl-20100117.xml" />
+</head>
+<body>
+	<div id="header"[% IF template.name == "index.tt2-$lang" %] class="hideOnLoad"[% END %]>
+	<div id="header_inside">
+	<div id="headerInsideInside">
+		[% IF template.name == "index.tt2-$lang" %]
+			<div id="meonlLink"><a title="[% i18n.loc('current meonl link to bookmark or send') %]" href="#" id="currentMeonlLink"><img width="16px" height="16px" src="[% content_root %]favicon.ico"/></a></div>
+			<div id="navigation">
+				&nbsp;
+				<a href="#" id="navBack"><img title="[% i18n.loc('button - Previous search') %]" width="16px" height="16px" src="[% content_root %]img/nav-back-grey.png"/></a>
+				<a href="#" id="navForward"><img title="[% i18n.loc('button - Next search') %]" width="16px" height="16px" src="[% content_root %]img/nav-forward-grey.png"/></a>
+			</div>
+			<div id="searchInputBox">
+				<div id="searchInputBoxInside">
+					<form action="#" method="POST" onsubmit="return false;">
+					<input id="searchInput" type="text" name="q" value=""/>
+					<!-- <input id="submitButton" type="submit" name="s" value="Search" /> -->
+					</form>
+				</div>
+				<div>
+					<input id="spaceSubmit" type="checkbox" name="a" title="[% i18n.loc('a title: space triggered search') %]"/>
+				</div>
+			</div>
+			<div id="searchEngines" class="searchHeadingEnginesList"></div>
+			<div id="searchAbout">
+				<a id="swLang" href="#"><img title="[% i18n.loc('menu - Switch language') %]" width="19px" height="19px" src="[% content_root %]img/sw-lang.png"/></a>
+				<a href="about.html"><img title="[% i18n.loc('menu - About') %]" width="19px" height="19px" src="[% content_root %]img/about.png"/></a>
+				<a href="http://meonl.com/[% lang %]/"><img title="[% i18n.loc('menu - Back to MeOnL.com') %]" width="19px" height="19px" src="http://meonl.com/favicon.ico"/></a>
+			</div>
+			<div class="contextMenu">
+				<ul>
+					<li>
+						<a href="de">
+							<img width="22px" height="15px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/22px-Flag_of_Germany.svg.png" />
+							Deutsch
+						</a>
+					</li>
+					<li>
+						<a href="cs">
+							<img width="22px" height="15px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_Czech_Republic.svg/22px-Flag_of_the_Czech_Republic.svg.png" />
+							Česky
+						</a>
+					</li>
+					<li>
+						<a href="en">
+							<img width="22px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/22px-Flag_of_the_United_States.svg.png" />
+							English
+						</a>
+					</li>
+					<li>
+						<a href="sk">						
+							<img width="22px" height="15px" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/22px-Flag_of_Slovakia.svg.png" />
+							Slovensky
+						</a>
+					</li>
+				</ul>
+			</div>
+		[% ELSE %]
+			<div id="searchInputBox">
+				<h1>[% i18n.loc('h1: Comparing search engines') %]</h1>
+			</div>
+			<div id="searchAbout">
+				<a href="index.html"><img title="[% i18n.loc('menu - Search') %]" width="16px" height="16px" src="[% content_root %]favicon.ico"/></a>
+			</div>
+		[% END  %]
+	</div>
+	</div>
+	</div>
+

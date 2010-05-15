@@ -1,0 +1,6 @@
+[% META title = 'compare search engines'; %]
+
+<noscript><h1>[% i18n.loc('h1: This page can not work without JavaScript, sorry.') %]</h1></noscript>
+
+<div id="searchIframes" class="hideOnLoad">
+</div>

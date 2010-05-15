@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://search.meonl.com/sitemap.xml
