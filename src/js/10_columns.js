@@ -50,13 +50,8 @@ columns.setupNewSearchColumn = function (colIndex, searchLetter, animate, clang)
 	var searchInput = input.val();
 
 	if ((lang != clang) && searchInput) {
-		google.language.translate(searchInput, lang, clang, function(result) {
-			if (!result.error) {
-				columns._setupNewSearchColumn(result.translation, colIndex, searchLetter, animate, clang);
-			}
-			else {
-				alert('error translating to '+clang);
-			}
+		input.translate(searchInput, lang, clang, function(result) {
+			columns._setupNewSearchColumn(result, colIndex, searchLetter, animate, clang);
 		});
 	}
 	else {
@@ -810,13 +805,8 @@ columns.update = function (searchInput) {
 		var search = searchEngines[clang][letter];
 
 		if ((lang != clang) && searchInput) {
-			google.language.translate(searchInput, lang, clang, function(result) {
-				if (!result.error) {
-					columns._update(search, result.translation, searchAnchor, iFrame, index);
-				}
-				else {
-					alert('error translating to '+clang);
-				}
+			input.translate(searchInput, lang, clang, function(result) {
+				columns._update(search, result, searchAnchor, iFrame, index);
 			});
 		}
 		else {

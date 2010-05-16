@@ -52,7 +52,7 @@ sub main {
 	) || diag $@;
 	is_deeply(
 		js_eval(q{input.plainKeywords(["~123", "-321", '+"1 2 3"'])}),
-		[123, 321, '1 2 3'],
+		[['~', 123], ['-', 321], ['+', '1 2 3']],
 		'input.plainKeywords'
 	) || diag $@;
 	

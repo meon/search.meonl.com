@@ -1,15 +1,6 @@
 
 var input = new Object;
 
-input.keywordsArray = [];
-
-input.keywords = function (keywords) {
-	if (keywords != null) {
-		input.keywordsArray = keywords;
-	}
-	return input.keywordsArray;
-}
-
 input.decodeQueryParam = function (param) {
 	// nothing to do for empty query parameter
 	if (!param) {
@@ -81,7 +72,7 @@ input.plainKeywords = function (keywordsArray) {
 	for (i in keywordsArray) {
 		
 		plainKeywords.push(
-			input.plainKeyword(keywordsArray[i])[1]
+			input.plainKeyword(keywordsArray[i])
 		)
 	}
 	return plainKeywords;
@@ -114,6 +105,61 @@ input.uriParam = function () {
 input.spaceSubmitClick = function () {
 	gPageTracker.event('search', 'space', ($(this).attr('checked') ? 'yes' : 'no'));
 	$.cookie('spaceSubmits', ($(this).attr('checked') ? 1 : 0), cfg.cookieSettings);
+}
+
+input.composeKeyword = function (stress, keyword) {
+	if (keyword.match(/ /)) {
+		keyword = '"'+keyword+'"';
+	}
+	return stress+keyword;
+}
+
+// translate array of keywords with stress one by one
+// can not be done in parallel as google.language.translate callback var is probably stored in global variable :-(
+input.translateArray = function (toTranslate, translated, lang, clang, callback) {
+	if (toTranslate.length == 0) {
+		callback(translated.join(' '));
+	}
+	else {
+		var stress  = toTranslate[0][0];
+		var keyword = toTranslate[0][1];
+		toTranslate.shift();
+		
+		google.language.translate(keyword, lang, clang, function(result) {
+			if (!result.error) {
+				alert(keyword+': '+input.composeKeyword(stress, result.translation)+' ('+lang+clang+';'+result.translation+')');
+				translated.push(input.composeKeyword(stress, result.translation));
+				input.translateArray(toTranslate, translated, lang, clang, callback);
+			}
+			else {
+				alert('error translating to '+clang);
+			}
+		});
+	}
+}
+
+input.translate = function (query, lang, clang, callback) {
+	// if there is any stress, translate one by one
+	if (query.match(/["\+\-\~]/)) {
+		var keywords = input.keywords(query);
+		input.translateArray(
+			input.plainKeywords(keywords),
+			[],
+			lang,
+			clang,
+			callback
+		);
+	}
+	else {
+		google.language.translate(query, lang, clang, function(result) {
+			if (!result.error) {
+				callback(result.translation);
+			}
+			else {
+				alert('error translating to '+clang);
+			}
+		});
+	}
 }
 
 1;
