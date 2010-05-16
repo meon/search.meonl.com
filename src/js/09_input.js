@@ -1,22 +1,91 @@
 
 var input = new Object;
 
-$(document).ready(function() {
-	input.val($.getURLParam("q"))
-	
-	$('#searchInputBox form').bind("submit", input.submit);
-	$('#searchInput').focus();
-	$('#searchInput').keyup(function(event){ 
-		if ($('#spaceSubmit').attr('checked') && (event.keyCode == 32)) { 
-			input.submit();
-		} 
-	});
-	if ($.cookie('spaceSubmits') == 1) {
-		$('#spaceSubmit').attr('checked', true);
+input.keywordsArray = [];
+
+input.keywords = function (keywords) {
+	if (keywords != null) {
+		input.keywordsArray = keywords;
 	}
-	$('#spaceSubmit').bind('click', input.spaceSubmitClick);
-	input.spaceSubmitClick(); // save/refresh current status in cookie
-});
+	return input.keywordsArray;
+}
+
+input.decodeQueryParam = function (param) {
+	// nothing to do for empty query parameter
+	if (!param) {
+		return '';
+	}
+
+	param =
+		decodeURIComponent(
+			param.replace( /\+/g, '%20' )    // plus means space
+		)
+		.replace(/  +/g, ' ')                // replace multi spaces just by one
+	;
+	return param;
+}
+
+input.keywords = function (query) {
+	var bare_keywords = 
+		query
+		.replace(/  +/g, ' ')                // replace multi spaces just by one
+		.split(' ')
+	;
+	
+	var keywords = [];
+	var in_quotes = '';
+	for (keyword_index in bare_keywords) {
+		keyword = bare_keywords[keyword_index];
+		if (!in_quotes && keyword.match(/^[\+\-~]?"/)) {
+			in_quotes = keyword;
+			continue;
+		}
+		if (in_quotes != '') {
+			in_quotes = in_quotes+' '+keyword;
+			if (keyword.match(/"$/)) {			
+				keywords.push(in_quotes);
+				in_quotes = '';
+			}
+			continue;
+		}
+		keywords.push(keyword);
+	}
+	// in case of no trailing quote
+	if (in_quotes != '') {
+		keywords.push(keyword);
+	}
+	
+	return keywords;
+}
+
+input.plainKeyword = function (keyword) {
+	var stress = keyword.match(/^[\+\-\~]/);
+	if (stress) {
+		stress = stress.shift();
+	}
+	else {
+		stress = '';
+	}
+	
+	return [
+		stress,
+		keyword
+			.replace(/^[\+\-\~]/, '')
+			.replace(/^"/, '')
+			.replace(/"$/, '')
+	];
+}
+
+input.plainKeywords = function (keywordsArray) {
+	var plainKeywords = [];
+	for (i in keywordsArray) {
+		
+		plainKeywords.push(
+			input.plainKeyword(keywordsArray[i])[1]
+		)
+	}
+	return plainKeywords;
+}
 
 input.submit = function () {
 	var val = input.val();
@@ -30,17 +99,21 @@ input.submit = function () {
 
 input.val = function (val) {
 	if (val != null) {
-		val = val.replace( /\+/g, '%20' );
-		val = decodeURIComponent(val);
 		$('#searchInput').val(val);
 	}
 	
 	val = $('#searchInput').val();
 	val = val.replace(/\s+$/,"").replace(/^\s+/,"")
-	return encodeURIComponent(val);
+	return val;
+}
+
+input.uriParam = function () {
+	return encodeURIComponent(input.val());
 }
 
 input.spaceSubmitClick = function () {
 	gPageTracker.event('search', 'space', ($(this).attr('checked') ? 'yes' : 'no'));
 	$.cookie('spaceSubmits', ($(this).attr('checked') ? 1 : 0), cfg.cookieSettings);
 }
+
+1;

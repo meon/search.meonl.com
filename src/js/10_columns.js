@@ -50,10 +50,9 @@ columns.setupNewSearchColumn = function (colIndex, searchLetter, animate, clang)
 	var searchInput = input.val();
 
 	if ((lang != clang) && searchInput) {
-		google.language.translate(decodeURIComponent(searchInput), lang, clang, function(result) {
+		google.language.translate(searchInput, lang, clang, function(result) {
 			if (!result.error) {
-				searchInput = encodeURIComponent(result.translation);
-				columns._setupNewSearchColumn(searchInput, colIndex, searchLetter, animate, clang);
+				columns._setupNewSearchColumn(result.translation, colIndex, searchLetter, animate, clang);
 			}
 			else {
 				alert('error translating to '+clang);
@@ -69,7 +68,7 @@ columns.setupNewSearchColumn = function (colIndex, searchLetter, animate, clang)
 columns._setupNewSearchColumn = function (searchInput, colIndex, searchLetter, animate, clang) {
 	var iFrameURL  = (
 		searchInput
-		? searchEngines[clang][searchLetter].q+searchInput
+		? searchEngines[clang][searchLetter].q+encodeURIComponent(searchInput)
 		: searchEngines[clang][searchLetter].home
 	);
 	var iFrameURLText = ( iFrameURL.length < columns.maxUrlLength ? iFrameURL : iFrameURL.substr(0,columns.maxUrlLength)+'...' );
@@ -292,35 +291,7 @@ columns.updateTokens = function(iFrameElement, searchElement, tokensElement, tok
 }
 
 columns.tokenKeywordsHtml = function () {
-	var bare_keywords = $('#searchInput').val().replace(/ +/g, ' ').split(/ /);
-	var keywords = [];
-	var in_quotes = '';
-	for (keyword_index in bare_keywords) {
-		keyword = bare_keywords[keyword_index];
-		if (!in_quotes && keyword.match(/^[\+\-]?"/)) {
-			in_quotes = keyword;
-			continue;
-		}
-		if (in_quotes != '') {
-			in_quotes = in_quotes+' '+keyword;
-			if (keyword.match(/"$/)) {
-				
-				keywords.push(in_quotes);
-				in_quotes = '';
-			}
-			continue;
-		}
-		keywords.push(keyword);
-	}
-	// in case of no trailing quote
-	if (in_quotes != '') {
-		keywords.push(keyword);
-	}
-
-	return columns.tokenKeywordsHtmlDivs(keywords);
-}
-
-columns.tokenKeywordsHtmlDivs = function (keywords) {
+	var keywords = input.keywords(input.val())
 	var html = '';
 	for (keyword_index in keywords) {
 		keyword = keywords[keyword_index];
@@ -536,7 +507,7 @@ columns.add_google_search_control = function(searchElement, searchInput, colInde
 	searchControl.draw(searchElement, drawOptions);
 
 	// Execute an inital search
-	searchControl.execute(decodeURIComponent(searchInput));
+	searchControl.execute(searchInput);
 	
 	columns.doSearch.splice(colIndex,0,searchControl);
 }
@@ -779,19 +750,19 @@ columns.getMeonlLink = function (forceLang) {
 	var currentLink = locationHref.substr(0, locationHref.length - searchQuery.length);
 	var letters     = columns.searchLetters();
 	var langs       = columns.langLetters();
-	var val         = input.val();
+	var query       = input.uriParam();
 	
-	if (letters && val) {
-		currentLink = currentLink+'?s='+letters+'&q='+val;
+	if (letters && query) {
+		currentLink = currentLink+'?s='+letters+'&q='+query;
 	}
 	else if (letters) {
 		currentLink = currentLink+'?s='+letters;
 	}
-	else if (val) {
-		currentLink = currentLink+'?q='+val;
+	else if (query) {
+		currentLink = currentLink+'?q='+query;
 	}
 	
-	if ((letters || val) && langs) {
+	if ((letters || query) && langs) {
 		currentLink = currentLink+'&l='+langs;
 	}
 	
@@ -839,10 +810,9 @@ columns.update = function (searchInput) {
 		var search = searchEngines[clang][letter];
 
 		if ((lang != clang) && searchInput) {
-			google.language.translate(decodeURIComponent(searchInput), lang, clang, function(result) {
+			google.language.translate(searchInput, lang, clang, function(result) {
 				if (!result.error) {
-					searchInput = encodeURIComponent(result.translation);
-					columns._update(search, searchInput, searchAnchor, iFrame, index);
+					columns._update(search, result.translation, searchAnchor, iFrame, index);
 				}
 				else {
 					alert('error translating to '+clang);
@@ -858,12 +828,12 @@ columns.update = function (searchInput) {
 }
 
 columns._update = function (search, searchInput, searchAnchor, iFrame, index) {
-	var searchLink = search.q+searchInput;
+	var searchLink = search.q+encodeURIComponent(searchInput);
 	var searchLinkText = ( searchLink.length < columns.maxUrlLength ? searchLink : searchLink.substr(0,columns.maxUrlLength)+'...' );
 	
 	if (iFrame.size() == 0) {
 		var searchControl = columns.doSearch[index];
-		searchControl.execute(decodeURIComponent(searchInput));
+		searchControl.execute(searchInput);
 	}
 	else {
 		iFrame.attr('src', searchLink);
