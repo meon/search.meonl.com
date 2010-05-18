@@ -127,7 +127,6 @@ input.translateArray = function (toTranslate, translated, lang, clang, callback)
 		
 		google.language.translate(keyword, lang, clang, function(result) {
 			if (!result.error) {
-				alert(keyword+': '+input.composeKeyword(stress, result.translation)+' ('+lang+clang+';'+result.translation+')');
 				translated.push(input.composeKeyword(stress, result.translation));
 				input.translateArray(toTranslate, translated, lang, clang, callback);
 			}
