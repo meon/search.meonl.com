@@ -228,7 +228,7 @@ columns.updateTokens = function(iFrameElement, searchElement, tokensElement, tok
 				+'<div class="oneSearchEngineLink" title="'+i18n('remove quotes - button title')+'"><a href="xq">x"</a></div>'
 			+'</div>'
 			+'<div class="tokenKeywords">'
-				+columns.tokenKeywordsHtml()
+				+columns.tokenKeywordsHtml(input.keywords(input.val()))
 			+'</div>'
 			+'<div class="googleTokensList"><ul>'
 		;
@@ -285,8 +285,7 @@ columns.updateTokens = function(iFrameElement, searchElement, tokensElement, tok
 	}
 }
 
-columns.tokenKeywordsHtml = function () {
-	var keywords = input.keywords(input.val())
+columns.tokenKeywordsHtml = function (keywords) {
 	var html = '';
 	for (keyword_index in keywords) {
 		keyword = keywords[keyword_index];
@@ -361,8 +360,8 @@ columns.tokenKeywordsDo = function (op, tokenKeywordsDiv) {
 			var keyword = keywords[keyword_index];
 			var keywordText = keyword.text().replace(/^[\+\-]?"/, '').replace(/"$/, '');
 			keyword.replaceWith(
-				columns.tokenKeywordsHtmlDivs(
-					keywordText.split(/ /)
+				columns.tokenKeywordsHtml(
+					input.keywords(keywordText)
 				)
 			);
 		}
