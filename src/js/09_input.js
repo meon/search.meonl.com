@@ -80,7 +80,7 @@ input.plainKeywords = function (keywordsArray) {
 
 input.submit = function () {
 	var val = input.val();
-	gPageTracker.event('search', 'submit', 1);
+	gPageTracker.event('search', 'submit');
 	columns.update(val);
 	columns.setMeonlLink();
 	navi.newInput(input.val());

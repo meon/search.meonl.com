@@ -49,6 +49,8 @@ navi.clickBack = function () {
 		return false;
 	}
 
+	gPageTracker.event('search', 'navigate', 'back');
+
 	navi.pointer--;
 
 	navi.navigating = 1;
@@ -63,6 +65,8 @@ navi.clickForward = function () {
 	if (navi.stack.length == navi.pointer) {
 		return false;
 	}
+
+	gPageTracker.event('search', 'navigate', 'forward');
 
 	navi.pointer++;
 

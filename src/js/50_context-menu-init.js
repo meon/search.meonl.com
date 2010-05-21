@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	$('#swLang').contextMenu({menuClass: 'contextMenu'});
 	$('.contextMenu').find('a').click(function () {
-		url = columns.getMeonlLink($(this).attr('href'));
+		var newLang = $(this).attr('href');
+		gPageTracker.event('columns', 'switch language', newLang);
+		url = columns.getMeonlLink(newLang);
 		if (window.location.href != columns.getMeonlLink()) {
 			columns.setMeonlLink();
 			$.cookie('redirect', url, cfg.sessionCookieSettings);

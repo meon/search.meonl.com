@@ -553,6 +553,8 @@ columns.initButtons = function () {
 columns.maximizeClick = function (e) {
 	var column = $(this).parent().parent('.column');
 	var index = column.prevAll().size();
+
+	gPageTracker.event('columns', 'maximize');
 	
 	var toClose = [];
 	$('.column').each(function(i) {
