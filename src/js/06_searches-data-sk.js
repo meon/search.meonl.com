@@ -10,6 +10,12 @@ searchEngines.sk = {
 		'home': 'http://google.sk/',
 		'q'   : 'http://www.google.sk/search?hl=sk&q='
 	},
+	'O': {
+		'name': 'Google Scholar',
+		'icon': 'http://www.google.com/favicon.ico',
+		'home': 'http://scholar.google.com/',
+		'q'   : 'http://scholar.google.com/scholar?hl=sk&q='
+	},
 	'y': {
 		'name': 'Yahoo',
 		'icon': 'http://search.yahoo.com/favicon.ico',
@@ -116,12 +122,14 @@ searchEngines.sk = {
 		'home': 'http://www.baidu.jp/',
 		'q'   : 'http://www.baidu.jp/s?wd='
 	},
+/* Naver is killing iframes
 	'n': {
 		'name': 'Naver',
 		'icon': 'http://www.naver.com/favicon.ico',
 		'home': 'http://www.naver.com/',
 		'q'   : 'http://search.naver.com/search.naver?query='
 	},
+*/
 	'M': {
 		'name': 'Citizendium',
 		'icon': 'http://en.citizendium.org/favicon.ico',
@@ -217,6 +225,24 @@ searchEngines.sk = {
 		'icon': '../img/tag.png',
 		'home': 'http://search.meonl.com/',
 		'q'   : 'http://search.meonl.com/en/?q='
+	},
+	'i': {
+		'name': 'Encyclopedia Britannica',
+		'icon': 'http://www.britannica.com/favicon.ico',
+		'home': 'http://www.britannica.com/',
+		'q'   : 'http://www.britannica.com/bps/search?query='
+	},
+	'e': {
+		'name': 'Scientific Commons',
+		'icon': 'http://www.scientificcommons.org/favicon.ico',
+		'home': 'http://www.scientificcommons.org/',
+		'q'   : 'http://www.scientificcommons.org/#search_string='
+	},
+	'o': {
+		'name': 'WolframAlpha',
+		'icon': 'http://www.wolframalpha.com/favicon.ico',
+		'home': 'http://www.wolframalpha.com/',
+		'q'   : 'http://www.wolframalpha.com/input/?i='
 	}
 };
 

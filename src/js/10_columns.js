@@ -825,7 +825,14 @@ columns._update = function (search, searchInput, searchAnchor, iFrame, index) {
 		searchControl.execute(searchInput);
 	}
 	else {
-		iFrame.attr('src', searchLink);
+		// workaround for scientificcommons.org that uses # in a query string
+		if (searchLink.match(/scientificcommons.org/)) {
+			iFrame.attr('src', '');
+			setTimeout(function () { iFrame.attr('src', searchLink) }, 100);
+		}
+		else {
+			iFrame.attr('src', searchLink);
+		}
 	}
 
 	searchAnchor.attr('href', searchLink);
