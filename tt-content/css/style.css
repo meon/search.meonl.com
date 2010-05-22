@@ -294,6 +294,10 @@ div.currentSelection {
 	padding: 7px 0 7px 0;
 }
 
+#content .mainText ul {
+	padding-left: 35px;
+}
+
 #content h1 {
 	font-size: 1.7em;
 	padding: 0.3em;
